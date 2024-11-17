@@ -3,7 +3,6 @@
 namespace App\Repositories\Api\Auth;
 
 use App\Helpers\UtilityHelper;
-use App\Models\User;
 use App\Services\UserService;
 
 class AuthRepository implements AuthInterface

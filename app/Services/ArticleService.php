@@ -2,20 +2,9 @@
 
 namespace App\Services;
 
-use App\Helpers\SendMailHelper;
 use App\Helpers\UtilityHelper;
 use App\Models\Article;
-use App\Models\User;
-use App\Models\UserPersonal;
 use Exception;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
-use Carbon\Carbon;
-use GuzzleHttp\Psr7\FnStream;
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Password;
-use Illuminate\Support\Facades\Validator;
 class ArticleService
 {   
     public function getList($request)

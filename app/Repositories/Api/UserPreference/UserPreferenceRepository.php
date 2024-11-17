@@ -2,10 +2,7 @@
 
 namespace App\Repositories\Api\UserPreference;
 
-use App\Helpers\UtilityHelper;
-use App\Models\User;
 use App\Services\UserPreferenceService;
-use App\Services\UserService;
 
 class UserPreferenceRepository implements UserPreferenceInterface
 {  

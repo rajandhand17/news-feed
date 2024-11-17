@@ -2,19 +2,8 @@
 
 namespace App\Services;
 
-use App\Helpers\SendMailHelper;
-use App\Helpers\UtilityHelper;
-use App\Models\User;
-use App\Models\UserPersonal;
 use App\Models\UserPreference;
-use Exception;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
-use Carbon\Carbon;
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Password;
-use Illuminate\Support\Facades\Validator;
+
 class UserPreferenceService
 {   
     public function storeOrUpdate($request) 

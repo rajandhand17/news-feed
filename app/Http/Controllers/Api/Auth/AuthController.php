@@ -8,7 +8,6 @@ use App\Http\Requests\Auth\ForgetPasswordRequest;
 use App\Http\Requests\Auth\LoginFormRequest;
 use App\Http\Requests\Auth\RegisterFormRequest;
 use \App\Http\Requests\Auth\ResetPasswordFormRequest;
-use App\Http\Requests\Auth\VerifyOtpRequest;
 use App\Http\Resources\Auth\LoginResource;
 use App\Http\Resources\User\UserResource;
 use Illuminate\Http\Request;

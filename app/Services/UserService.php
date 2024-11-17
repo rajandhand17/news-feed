@@ -2,18 +2,13 @@
 
 namespace App\Services;
 
-use App\Helpers\SendMailHelper;
 use App\Helpers\UtilityHelper;
 use App\Models\User;
-use App\Models\UserPersonal;
-use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Password;
-use Illuminate\Support\Facades\Validator;
 class UserService
 {   
     
@@ -134,7 +129,7 @@ class UserService
                 $user->otp = $otp;
                 $user->save();
                 $data = ['subject' => 'Forget Password', 'first_name' => $user['first_name'], 'last_name' => $user['last_name'], 'otp' => $user['otp']];
-                $mail = true;//SendMailHelper::sendMail($user, 'email.forget_password_otp', $data); if need to send mail then need to create template and setup smpt for gmail,
+                $mail = true;//SendMailHelper::sendMail($user, 'email.forget_password_otp', $data); if need to send mail then need to create template and setup smpt for gmail and also create template for mail, I have wrote tempory name for email.forget_password_Otp,
                 if ($mail) {
                     $success = ['success' => true, 'user' => $user, 'code' => $otp];
 

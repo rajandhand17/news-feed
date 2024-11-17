@@ -3,9 +3,7 @@
 namespace App\Repositories\Api\Article;
 
 use App\Helpers\UtilityHelper;
-use App\Models\Article;
 use App\Services\ArticleService;
-use PhpParser\Node\Expr\FuncCall;
 
 class ArticleRepository implements ArticleInterface
 {   

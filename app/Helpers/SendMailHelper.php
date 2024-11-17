@@ -9,7 +9,8 @@ class SendMailHelper
 {
     public static function sendMail($user, $view, $data)
     {
-        try {
+        try { 
+            
             $result = Mail::to($user->email)->send(new SendMail($user, $view, $data));
 
             return $result;
